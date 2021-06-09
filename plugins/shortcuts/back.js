@@ -20,8 +20,8 @@ function registerShortcuts(win, options) {
 	const { playPause, next, previous, search } = songControls;
 
 	_registerGlobalShortcut(win.webContents, "MediaPlayPause", playPause);
-	_registerGlobalShortcut(win.webContents, "MediaNextTrack", next);
-	_registerGlobalShortcut(win.webContents, "MediaPreviousTrack", previous);
+	_registerGlobalShortcut(win.webContents, "Control+Arrowright", next);
+	_registerGlobalShortcut(win.webContents, "Control+Arrowleft", previous);
 	_registerLocalShortcut(win, "CommandOrControl+F", search);
 	_registerLocalShortcut(win, "CommandOrControl+L", search);
 
